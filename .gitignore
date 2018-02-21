@@ -1,0 +1,17 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+secret.json
+
+*.crx
+*.pem
+
+server/assets/css/*
+server/assets/img/*
+!server/assets/img/_core*
+server/assets/icons/*
+
+node_modules/*
+front/node_modules/*
+server/node_modules/*
+front/jspm_packages/*

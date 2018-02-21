@@ -1,0 +1,118 @@
+.tips {
+    padding: 0 var(--modular-s);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+	margin: 0 auto 0;
+	max-width: 30rem;
+	font-size: var(--modular-s);
+}
+
+.tips .button__button {
+	width: 100%;
+	font-size: var(--modular-base);
+}
+
+.tips .button__button:last-child {
+	margin: 0 0 4rem;
+}
+
+.tips__title {
+    color: var(--main-color);
+    margin: 0 0 var(--modular-base);
+    font-weight: 600;
+    font-size: var(--modular-xl);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.tips__list {
+    padding: 0;
+    margin: 0;
+}
+
+.tips__tip {
+	padding: var(--modular-xs) var(--modular-s) var(--modular-s);
+    background: var(--card-color);
+    margin-bottom: var(--modular-xs);
+    border: 1px outset var(--color-gray-darker);
+    border-bottom: solid 1px var(--main-color);
+	list-style: none;
+	box-shadow: inset 0.1rem 0.7rem 1.5rem rgba(0, 0, 0, 0.35);
+	word-wrap: break-word;
+}
+
+.tips__tip:last-child {
+    margin: 0 0 var(--modular-xxl);
+}
+
+.tips__tip-name_big-white-quote {
+    font-size: var(--modular-base);
+    font-weight: 600;
+    margin: 0 0 0 3px;
+}
+
+.tips__tip-name_big-red-quote {
+    font-size: var(--modular-base);
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 0 3px 0 0;
+}
+
+.tips__show-more-btn {
+    border: 2px solid var(--main-color);
+	font-size: var(--modular-s);
+	padding: var(--modular-s) var(--modular-s);
+	transition: all .25s ease-out;
+    font-family: 'Rajdhani';
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 0 0 var(--modular-l);
+    background: #00000042;
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-position: 50% 0%;
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    line-height: 0;
+    width: 100%;
+    margin: 0 0 var(--modular-xxl);
+    cursor: pointer;
+}
+
+.tips__show-more-btn:focus {
+	outline: none;
+}
+
+/*
+ * Media Queries
+ */
+
+ @media (--tablet-large) {
+	.tips__title {
+		font-size: var(--modular-xxl);
+	}
+	.tips .button__button:last-child {
+		margin: 0 0 8rem;
+	}
+    .tips__tip-name {
+        font-size: var(--modular-base);
+    }
+ }
+
+ @media (--desktop) {
+    .tips__show-more-btn {
+        padding: var(--modular-base);
+    }
+    .tips__show-more-btn:hover {
+        background-size: 100% 100%;
+        color: var(--secondary-color);
+        box-shadow: var(--box-shadow);
+    }
+    .tips__show-more-btn:active {
+        transform: translateY(2px);
+    }
+    .tips__tip-name_big-red-quote, .tips__tip-name_big-white-quote {
+        font-size: calc(var(--modular-l) * .85);
+    }
+ }

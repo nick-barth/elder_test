@@ -1,0 +1,48 @@
+.button__button {
+	border: 2px solid var(--main-color);
+	font-size: var(--modular-s);
+	padding: var(--modular-s) var(--modular-s);
+	transition: all .25s ease-out;
+    font-family: 'Rajdhani';
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 0 0 var(--modular-xl);
+    background: transparent;
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 100% 0%;
+    line-height: 0;
+    cursor: pointer;
+    align-self: flex-start;
+	width: 100%;
+}
+
+.button__button:active {
+	transform: translateY(2px);
+}
+
+.button__button:focus {
+	outline: none;
+}
+
+@media (--tablet) {
+    .button__button {
+        padding: var(--modular-s) var(--modular-base);
+        width: auto;
+        align-self: center;
+    }
+}
+
+@media (--desktop) {
+    .button__button {
+        font-size: var(--modular-base);
+        padding: var(--modular-base) var(--modular-l);
+	}
+	.button__button:hover {
+		background-size: 100% 100%;
+		color: var(--secondary-color);
+		box-shadow: var(--box-shadow);
+	}
+}

@@ -1,0 +1,4 @@
+{
+	"name": "development",
+	"api": "mongodb://localhost:27017/test"
+}

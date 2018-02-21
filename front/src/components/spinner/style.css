@@ -1,0 +1,42 @@
+.spinner {
+	display: flex;
+	height: 10rem;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	opacity: .9;
+	flex-basis: auto;
+	flex-grow: 1;
+}
+
+.spinner__circle {
+	border: .7rem solid var(--spinner-color);
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	box-shadow: var(--box-shadow);
+}
+
+.spinner__circle-outer {
+	border: .3rem solid rgba(0, 0, 0, 0.25);
+	border-top: .3rem solid #ffffff31;
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 20;
+	animation-name: spin;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/***
+ * Animation
+ * -
+ */
+
+ @keyframes spin {
+    0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

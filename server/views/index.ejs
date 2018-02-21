@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quake Champ Select</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bundle.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+		<meta name="keywords" content="quake, quakechampions, matchup, championselect, vote, champions, counters, counter"/>
+		<meta name="description" content="Quake Champions matchup voting.  Find counters and weaknesses. Counter champion picks for quake champions.  Helping people pick champions for quake games. Quake champions matchup select"/>
+		<meta name="subject" content="Quake champion select.">
+		<meta name="language" content="EN">
+		<meta name="author" content="Nick, barth.nicholas@gmail.com">
+		<meta name="designer" content="">
+		<meta name="copyright" content="">
+		<meta name="reply-to" content="email@hotmail.com">
+		<meta name="owner" content="">
+		<meta name="url" content="http://quakechampselect.com/">
+		<meta name="identifier-URL" content="http://quakechampselect.com/">
+		<meta name="coverage" content="Worldwide">
+		<meta name="distribution" content="Global">
+		<meta name="rating" content="General">
+		<meta name="revisit-after" content="7 days">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113145122-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-113145122-1');
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bundle.css">
+
+		<meta name="google-site-verification" content="OOXJh8nsELD1ilVBeZyfT59IKmSECG4syaBdub6yxy8" />
+
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-9302453057691238",
+			enable_page_level_ads: true
+		});
+		</script>
+
+	</head>
+	<body>
+		<div id="app"></div>
+
+		<script type="text/javascript">
+      		window.env = <%- JSON.stringify(env) %>;
+    	</script>
+
+		<% if(env == 'local'){ %>
+			<script type="text/javascript" src="http://localhost:8777/bundle.js"></script>
+		<% } else{ %>
+			<script type="text/javascript" src="/js/bundle.js"></script>
+		<% } %>
+	</body>
+</html>

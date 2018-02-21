@@ -1,0 +1,79 @@
+/***
+ * Variables
+ * -
+ */
+
+ :root {
+	/*
+	 * Modular Scale
+	 */
+	--modular-xxxs: .41rem;
+	--modular-xxs: .512rem;
+	--modular-xs: .64rem;;
+	--modular-s: .8rem;
+	--modular-base: 1rem;
+	--modular-l: 1.25rem;
+	--modular-xl: 1.563rem;
+	--modular-xxl: 1.953rem;
+	--modular-xxxl: 2.441rem;
+	/*
+	 * Theme
+	 */
+
+	--background-texture: url(/images/textures/background-texture-large.jpg);
+	--background-color: rgb(19, 19, 19);
+	--card-color: rgba(19, 19, 19, 0.85);
+	--main-color: #d22730;
+	--card-name-bg: rgba(210, 39, 48, .9);
+	--secondary-color: #e6dbdc;
+	--overlay-background: rgba(0, 0, 0, 0.7);
+	--box-shadow: 0 0 3px 0 var(--main-color);
+	--box-shadow-inset: inset 0.5rem 0.7rem 16px rgba(0, 0, 0, 0.35);
+	--text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+	/*
+	 * Colors
+	 */
+	--main-color-darker: #b72a31;
+	--spinner-color: var(--main-color);
+	--color-green: #2EAF21;
+	--color-yellow: #D67428;
+	--color-red: #d22730;
+	--color-white: #ffffff;
+	--color-gray-lightest: #fcfcfc;
+	--color-gray-lighter: #f3f3f3;
+	--color-gray-light: #E2E2E2;
+	--color-gray-medium-light: #dddddd;
+	--color-gray-medium: #eaeaea;
+	--color-gray-dark: #555555;
+	--color-gray-darker: #3f3f3f;
+	/*
+	 * Texts
+	 */
+	--color-text-graph: #3e3e3e;
+	--color-text-light: #868686;
+	--color-text-dark: #414141;
+	/*
+	 * Alert/Status colors
+	 */
+	--color-error: #DB4736;
+	--color-success: #5FA052;
+	--color-warning: #DD7F33;
+	/*
+	 * Easings
+	 */
+	--easing-ios: cubic-bezier(0.23, 1, 0.32, 1);
+	--easing-expand: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	--easing-quad: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+
+/***
+ * Media queries
+ * -
+ */
+
+@custom-media --tablet all and (min-width:600px);
+@custom-media --tablet-large all and (min-width:900px);
+@custom-media --desktop all and (min-width:1200px);
+@custom-media --desktop-medium all and (min-width:1600px);
+@custom-media --desktop-large all and (min-width:1800px);

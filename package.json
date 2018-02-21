@@ -1,0 +1,11 @@
+{
+  "name": "react-boiler-server",
+  "version": "1.0.0",
+  "description": "Server of the react-boiler",
+  "main": "./server/app.js",
+  "scripts": {
+    "start": "cd server && npm install && node app"
+  },
+  "author": "",
+  "license": "ISC"
+}
