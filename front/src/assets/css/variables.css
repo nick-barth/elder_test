@@ -20,21 +20,20 @@
 	 * Theme
 	 */
 
-	--background-texture: url(/images/textures/background-texture-large.jpg);
-	--background-color: rgb(19, 19, 19);
+	--background-texture: none;
 	--card-color: rgba(19, 19, 19, 0.85);
 	--main-color: #d22730;
 	--card-name-bg: rgba(210, 39, 48, .9);
 	--secondary-color: #e6dbdc;
 	--overlay-background: rgba(0, 0, 0, 0.7);
-	--box-shadow: 0 0 3px 0 var(--main-color);
+	--box-shadow: 0 0 3px 0 #ffffff;
 	--box-shadow-inset: inset 0.5rem 0.7rem 16px rgba(0, 0, 0, 0.35);
 	--text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 	/*
 	 * Colors
 	 */
 	--main-color-darker: #b72a31;
-	--spinner-color: var(--main-color);
+	--spinner-color: #ffffff;
 	--color-green: #2EAF21;
 	--color-yellow: #D67428;
 	--color-red: #d22730;

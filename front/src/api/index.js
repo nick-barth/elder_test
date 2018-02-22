@@ -6,9 +6,7 @@ import superagent from 'superagent';
 /*
  * Endpoints
  */
-import getUserApi from './endpoints/user.js';
-import getChampApi from './endpoints/champ.js';
-import getMatchupApi from './endpoints/matchup.js';
+import getTestApi from './endpoints/test.js';
 
 //Data
 import { env } from 'data';
@@ -95,9 +93,7 @@ function API () {
 	 * Expose API
 	 */
 	return {
-		champ: getChampApi(exec),
-		matchup: getMatchupApi(exec),
-		user: getUserApi(exec)
+		test: getTestApi(exec)
 	};
 
 }

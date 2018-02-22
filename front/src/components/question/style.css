@@ -1,0 +1,13 @@
+.questions {
+
+}
+
+.questions__answer {
+	list-style: none;
+	margin-bottom:.3rem;
+}
+
+.questions__answer-text {
+	padding-left:.3rem;
+	font-size:.8rem;
+}

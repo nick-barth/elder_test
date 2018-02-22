@@ -9,7 +9,8 @@ import React from 'react';
 import API from 'api';
 
 // Components
-import ChampionGrid from 'components/championGrid/index.js';
+import Grid from 'components/grid/index.js';
+import Spinner from 'components/spinner/index.js';
 
 /*
  * LAYOUT - INDEX
@@ -20,23 +21,19 @@ export default class App extends React.Component {
 	constructor (props) {
 		super(props);
 
-		this.state = {
-			champions: [],
-			championsLoading: false
-		};
-
 	}
 
 	componentWillMount () {
 		this.setState({
-			championsLoading: true
+			isLoading: true
 		});
-		API.champ.getChampions()
+
+		API.test.getQuestions()
 		.promise
 		.then(res => {
 			this.setState({
-				champions: res.data,
-				championsLoading: false
+				questions: res.data,
+				isLoading: false
 			});
 		})
 		.catch(res => {
@@ -46,10 +43,13 @@ export default class App extends React.Component {
 	}
 
 	render () {
-		const { champions, championsLoading } = this.state;
+		const { isLoading, questions } = this.state;
 
 		return (
-				<ChampionGrid champions={champions} isLoading={championsLoading} />
+			<div className="app">
+				<h1 className="app__header"> Nick Barth's FrontEnd Meta Test </h1>
+				{isLoading ? <Spinner /> : <Grid questions={questions} />}
+			</div>
 		);
 	}
 
