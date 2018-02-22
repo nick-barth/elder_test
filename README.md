@@ -1,6 +1,8 @@
 # Abstract
 
-Used my own custom react-boiler to do a react test for Elder.
+Used my own custom react-boiler to do a react test for Elder. 
+
+I did not satisfy all of the requirements, I didn't see that Redux was listed as a requirement until I had already completed it, however, I have included a store I wrote for a project earlier if you'd like to check it out, I don't have time to go back and add state management tonight, I'm sorry.
 
 # Installation
 To run or modify the app, follow instructions below:
